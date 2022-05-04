@@ -371,6 +371,7 @@ export function PuzzleSpotlight(els,state){
       setTick(tick,location) {
         const _x = this.xStart + (location-this.state.min)/this.lineWidthInUnits*this.lineWidthInPixels
         const _y = this.state.numberLineY - this.tickHeight / 2
+       
         gsap.set(tick,{x: _x,y: _y})
       }
     
